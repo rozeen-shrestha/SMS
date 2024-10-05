@@ -1,6 +1,7 @@
 "use client"
+import { useRouter } from 'next/navigation';
 import React from 'react'
-import { useRouter } from 'next/router'
+
 
 const Page = () => {
   const router = useRouter();
@@ -16,7 +17,7 @@ const Page = () => {
         className="bg-blue-500 text-white py-2 px-4 rounded"
         onClick={handleDashboardClick}
       >
-        Dashboard
+        Go To Dashboard
       </button>
     </div>
   )
