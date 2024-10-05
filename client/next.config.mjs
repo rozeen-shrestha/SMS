@@ -1,10 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+// next.config.mjs
+export default {
     reactStrictMode: true, // Enables React's Strict Mode
-    api: {
-        externalResolver: true,
+    env: {
+      NEXTAUTH_URL: process.env.NEXTAUTH_URL,
+      NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
     },
-    // Add other configurations as needed
-};
-
-export default nextConfig;
+  };
