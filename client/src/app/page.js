@@ -1,9 +1,12 @@
 import React from 'react'
 
-const page = () => {
+const Page = () => {
   return (
-    <div>page</div>
+    <div className="flex flex-col items-center justify-center h-screen">
+      <div className="text-xl mb-4">SMS v0.1</div>
+      <button className="bg-blue-500 text-white py-2 px-4 rounded">Dashboard</button>
+    </div>
   )
 }
 
-export default page
+export default Page
